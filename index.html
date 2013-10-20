@@ -1,383 +1,393 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
+    <title>iMatix - We Know Distributed Software</title>
+    <meta name="description" content="iMatix.com">
+    <meta name="author" content="iMatix">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write ('<link rel="stylesheet" href="css/print/'
+            + (window.location.search.match( /print-pdf/gi )? 'pdf': 'paper')
+            + '.css" type="text/css" media="print">');
+    </script>
+</head>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+<body>
+<div class="reveal">
+<div class="slides">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<section>
+    <h2>Distributed systems are in our blood</h2>
+    <hr/>
+    <p class="fragment">1991: we build the middleware for a major European tour operator serving 5,000 travel agents in seven countries</p>
+    <p class="fragment">1996: we invent the fast, portable web server, <a href="http://en.wikipedia.org/wiki/Xitami">Xitami</a></p>
+    <p class="fragment">1998: ServerWatch names Xitami its "Hall of Fame winner"</p>
+    <p class="fragment">2004: we reinvent messaging for JPMorganChase as AMQP</p>
+    <p class="fragment">2006: we move JPMC's trading platform to <a href="http://openamq.org">OpenAMQ</a></p>
+    <p class="fragment">2007: we reinvent messaging, <i>again</i>, as <a href="http://zeromq.org">ZeroMQ</a></p>
+    <p class="fragment">2008: we move the Dow Industrial Average to OpenAMQ</p>
+    <p class="fragment">2013: we reinvent secure messaging with ZeroMQ V4</p>
+</section>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### We are iMatix
+        ----
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        We design & build best-in-class distributed systems.
+        Our designs are efficient, scalable, reactive, and they do not break.
+        We've been making long-running distributed systems for the world's largest businesses for over 20 years.
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        ----
+        Press right to see we can do for you.
 
-		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
-		<script>
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
-		</script>
+        Press down to see more of what we've done for others.
+        </script>
+    </section>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+    <section data-markdown>
+        <script type="text/template">
+        ### 2011-2012 - Samsung (Dallas TX, Seoul)
+        ----
 
-	<body>
+        Samsung said, *"make our phones more fun and useful"*
 
-		<div class="reveal">
+        We used [ZeroMQ](http://zeromq.org) to let phones see each other, and share content and user events. You take a photo, I'll draw on it. This became [Samsung Chord](http://developer.samsung.com/chord).
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+        We did the technical design, evangelism, made prototypes, and built new development teams on a post-agile process. We built the [Group Play](https://www.google.be/search?q=samsung+group+play) app and migrated Samsung's [Smart School flagship](https://www.google.be/search?q=samsung+smart+school) onto Chord.
 
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
+        ----
+        We worked in C, Java, C#, on Android, Linux, and Windows
+        </script>
+    </section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+    <section data-markdown>
+        <script type="text/template">
+        ### 2008-2011 DowJones (Trenton NJ)
+        ----
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#" class="navigate-down">down</a>.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif" alt="Unicorn">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+        DownJones said, *"make our indexes run faster and cheaper"*
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? No problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slid.es" target="_blank">http://slid.es</a>.
-					</p>
-				</section>
+        We used [OpenAMQ](http://openamq.org) to replace a black-box pub-sub system with a new AMQP-based one. The Dow ran on OpenAMQ until 2013.
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+        We modifed the wire protocols, and tuned OpenAMQ to run 4x faster, handling 600K messages per second with average latency of 150 usec. We helped the indexes team tune their APIs to achieve *peak* end-to-end latencies of under 1 msec.
 
-				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
-					</p>
-				</section>
+        ----
+        We worked in C on Linux and AIX
+        </script>
+    </section>
 
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+    <section data-markdown>
+        <script type="text/template">
+        ### 2007 Cisco Systems (San Jose CA)
+        ----
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+        Cisco said, *"make AMQP work with multicast"*
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+        We designed a new pub-sub architecture that added [SCTP](http://tools.ietf.org/html/rfc4960) and [PGM](http://tools.ietf.org/html/rfc3208) multicast to AMQP. This became the basis for ZeroMQ, which we launched in December 2007, with Cisco and Intel as launch partners.
 
-						For those of you who like that sort of thing. Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
+        ----
+        We worked in C and C++ on Linux
+        </script>
+    </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+    <section data-markdown>
+        <script type="text/template">
+        ### 2004-2009 JPMorganChase (London)
+        ----
 
-						  For those of you who like that sort of thing.
-						  Instructions and a bit more info available [here](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+        JPMC's investment bank said, *"solve our messaging nightmare"*
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
+        We designed a new open messaging protocol, [AMQP](http://www.amqp.org), and built the first implementation, [OpenAMQ](http://openamq.org), and helped JPMC start an industry workgroup for AMQP.
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-						<a href="?#/themes">Default</a> -
-						<a href="?theme=sky#/themes">Sky</a> -
-						<a href="?theme=beige#/themes">Beige</a> -
-						<a href="?theme=simple#/themes">Simple</a> -
-						<a href="?theme=serif#/themes">Serif</a> -
-						<a href="?theme=night#/themes">Night</a> <br>
-						<a href="?theme=moon.css#/themes">Moon</a> -
-						<a href="?theme=simple.css#/themes">Simple</a> -
-						<a href="?theme=solarized.css#/themes">Solarized</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
+        We migrated JPMC's largest stock trading platform to OpenAMQ, running in New York, London, Johannesburg, Moscow.
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the background.
-					</p>
-				</section>
+        ----
+        We worked in C on Linux
+        </script>
+    </section>
 
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code data-trim contenteditable style="font-size: 18px; margin-top: 20px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+    <section data-markdown>
+        <script type="text/template">
+        ### 1998-2008 Manpower International (Milwaukee WI)
+        ----
 
-				<section>
-					<section data-background="#007777">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#007777"</code> on a slide to change the full page background to the given color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="image navigate-down">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Repeated Image Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-				</section>
+        Manpower said, *"fix our web-based HR ordering nightmare"*
 
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<h2>Background Transitions</h2>
-					<p>
-						Pass reveal.js the <code>backgroundTransition: 'slide'</code> config argument to make backgrounds slide rather than fade.
-					</p>
-				</section>
+        We built from scratch, deployed, operated, and maintained [UltraSource](https://ultrasource.manpower.co.jp/login.asp?op=I), Manpower's global web-based HR procurement system. The application was highly customizable by resource managers, and fully multilingual.
 
-				<section data-transition="linear" data-background="#8c4738" data-background-transition="slide">
-					<h2>Background Transition Override</h2>
-					<p>
-						You can override background transitions per slide by using <code>data-background-transition="slide"</code>.
-					</p>
-				</section>
+        *"UltraSource was the first tool in the staffing industry to provide the scalability, flexibility, and language capability to serve customers worldwide"*, said Jeffrey A. Joerres, Chairman & CEO of Manpower Inc.
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+        ----
+        We worked in C, C++, VB, ASP, and SQL, on Windows and SQLServer
+        </script>
+    </section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+    <section data-markdown>
+        <script type="text/template">
+        ### 2001-2003 CBR (Belgium)
+        ----
 
-    var nodes = document.querySelectorAll( selector );
+        CBR said, *"help us automate our cement deliveries"*
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+        With previous experience of helping CBR, we built the order dispatching system for their Ghent factory. This system connects a SAP system in Brussels to the factory's industrial network for unattended 24/7 cement deliveries.
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+        Our team built the software and hardware, including plug-and-play kiosks of our own design that booted Linux over the network, to connect over a messaging layer to SAP, fetch orders, print tickets, and control the loading bays.
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+        ----
+        We worked in C, VB, Oracle, C++, on Windows, Unix, and Linux, and in stainless steel.
+        </script>
+    </section>
 
-				<section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
+    <section data-markdown>
+        <script type="text/template">
+        ### 2000-2001 Nigerian Breweries (Lagos)
+        ----
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
+        NBL said, *"help us get rid of this cash"*
 
-				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-						<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-					</a>
-				</section>
+        With no credit system, and an economy rife with fraud, drinks distributors paid for trucks of beer with suitcases of cash. We built a secure messaging system that let distributors send authenticated wire transfers to their banks. We fed transactions back into NBL's accounting system.
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-					<iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-					<script>
-						document.getElementById('slideshare').attributeName = 'allowfullscreen';
-					</script>
-				</section>
+        ----
+        We worked in C, VB, ASP, SQL, and COBOL, on Windows, and Linux.
+        </script>
+    </section>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
+    <section data-markdown>
+        <script type="text/template">
+        ### 1991-2011 Delight Information Systems (Belgium)
+        ----
 
-				<section>
-					<h2>Stellar Links</h2>
-					<ul>
-						<li><a href="http://slid.es">Try the online editor</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on GitHub</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-					</ul>
-				</section>
+        [Delight](http://www.delight.be/) asked, *"Help us build a Europe-wide tour operator network"*.
 
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Hakim El Hattab / hakim.se</h3>
-				</section>
+        How to handle a 1,500 travel agents on a small VAX server? The standard terminal handlers from Digital could only do 30 users per process.
 
-			</div>
+        We wrote our own terminal handler, using a custom multithreading framework driven by asynch I/O events. This let us reach 500 users per process.
 
-		</div>
+        The terminal handlers spoke the VT220 protocol over [LAT](http://en.wikipedia.org/wiki/Local_Area_Transport), [TELNET](http://tools.ietf.org/html/rfc854), and [TN3270](http://tools.ietf.org/html/rfc1576) and plugged into an ACMS transaction processing backend.
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+        ----
+        We worked in C, on OpenVMS/ACMS.
+        </script>
+    </section>
+</section>
 
-		<script>
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### Technical Risk Management
+        ----
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+        We take extremely risky, difficult or so-called impossible mission-critical projects. We eliminate the risk through careful design, process, and long experience, and we deliver world-class products that will run for decades.
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+        ----
+        Press down for more on how we manage technical risks.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Systemic Deconstruction
+        ----
+        No matter how large the problem, we break it down into clean layers that can be solved independently, and at each layer we define a minimal plausible internal architecture. This gives a clean minimal end-to-end skeleton.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Full Testability
+        ----
+        We define formal contracts between these layers, in such a way that each piece can be 100% tested in isolation. We design protocols and APIs, and document these so that development always works towards a known contract.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Post Agile Process
+        ----
+        Our process goes way beyond Agile. We let developers self-organize around discrete problems supplied by expert users. This reduces the need for meetings, for evaluations, and prioritization.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Continuous Delivery
+        ----
+        Instead of weekly or monthly cycles, we aim for incremental growth through real use. We break features and problems into discrete issues, and solve each of these minimally. The results can be shipped at almost any moment.
+    </section>
+</section>
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-				]
-			});
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### Decentralized Security
+        ----
 
-		</script>
+        When you need strong, unbreakable encrytion, you can't trust old backdoored technologies, nor CAs who can be hacked. We added state of the art security into ZeroMQ.
 
-	</body>
+        ----
+        Press down for more on strong decentralized security.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Elliptic Curve Cryptography
+        ----
+        From ZeroMQ v4, we use independently developed [Curve25519](http://cr.yp.to/ecdh.html), very fast and secure. Two ZeroMQ peers use [a secure handshake](http://curvezmq.org) to exchange transient keys, giving perfect forward security.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Authentication
+        ----
+        Peers exchange keys beforehand using secure certificates. Our [CZMQ library](http://czmq.zeromq.org) does client authentication automatically, or we can connect the authenticator to an LDAP server or other authority.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Transport Layer Security
+        ----
+        Since ZeroMQ v4 does security in the transport layer, it works for all socket types, including REQ-REP, PUB-SUB, PUSH-PULL, and ROUTER-DEALER. Further, you can mix applications in any language, using the same security technology.
+        </script>
+    </section>
+</section>
+
+<section data-background="image/zeromq.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### We Know Open Source
+        ----
+
+        When free or open source software is part of your strategy, you need a partner with experience. We've been making open source [since 1991](http://legacy.imatix.com/html/libero/).
+
+        ----
+        Press down for more on our open source experience.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Community Building
+        ----
+        As the founders of the ZeroMQ community, we know how to help people organize around open source. We've taken the lead in ZeroMQ and [CZMQ](http://czmq.zeromq.org), two of the core projects. There are hundreds of open source projects around ZeroMQ.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Contribution Processes
+        ----
+        The saying goes, you don't want ninjas, you want ants. Ninjas are never there. Ants carry a hundred times their own weight and are great at working in teams. We're experts in making the ants happy and productive.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Copyrights, Patents, Trademarks
+        ----
+        You have to get these right from the start in your FOSS project. We're experts in how these affect open source. iMatix CEO Pieter Hintjens [was a prominent campaigner](http://www.iam-magazine.com/blog/detail.aspx?g=db757d27-e86c-49b6-9c4c-1ca7ecb47cae&q=hintjens#search=%22hintjens%22) for open standards and software patent reform in Europe.
+        </script>
+    </section>
+</section>
+
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### For More Information
+        ----
+
+        Contact us at sales@imatix.com with your ideas for how we can work together, and any questions you might have.
+
+        ----
+        Press down for more on iMatix.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### Services and Rates
+        ----
+        We provide on-site training and workshops, technical architecture, product conceptualization, risk management, patent and copyright strategies, community-building, technical coding in any language but mostly in C, and long term support.
+
+        Our rates depend on the location and duration of work.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### For More Information
+        ----
+        You can read more about iMatix's unique approach to world-class software engineering in the O'Reilly book, ["ZeroMQ - Messaging for Many Applications"](http://shop.oreilly.com/product/0636920026136.do).
+
+        ![](image/book.png)
+        </script>
+    </section>
+</section>
+
+<section data-markdown data-background="image/imatix.png">
+    <script type="text/template">
+    *"Where Xitami truly shines is its small memory footprint and raw speed. Xitami's multithreaded engine delivers faster performance with fewer resources than comparative Apache installations. Apache, as of version 2.0, is multithreaded, but it's still a larger, slower beast compared to nimble Xitami. Thus, at its heart, Xitami is a basic, very fast and efficient Web server."*
+
+    [ServerWatch, 2004](http://www.serverwatch.com/sreviews/article.php/3116281)
+    </script>
+</section>
+
+<section data-markdown data-background="image/zeromq.png">
+    <script type="text/template">
+    *"Working with 0MQ has been a huge pleasure, bringing massive improvements in stability, understandability, and code quality. I also highly recommend anyone working on concurrent applications of any sort, whether or not you plan to use 0MQ, read the 0MQ Guide to learn how to mitigate most of the current headaches in multithreaded applications. I know for a fact that multithreading code is a path I will never voluntarily tread again."*
+
+    [Professional ASP.NET e-commerce developer](http://www.nothingisalotofsomething.com/post/2012/06/02/Experiences-With-ZeroMQ.aspx)
+    </script>
+</section>
+
+<section data-markdown data-background="image/zeromq.png">
+    <script type="text/template">
+    *"That test also unveiled the brilliant, automatic message batching implemented in ZeroMQ."*
+
+    [CERN, Geneva](http://www.zeromq.org/local--files/intro:read-the-manual/Middleware%20Trends%20and%20Market%20Leaders%202011.pdf)
+
+    ![](image/cern2.png)
+    </script>
+</section>
+
+<section data-markdown data-background="image/zeromq.png">
+    <script type="text/template">
+    *"We’re pleased because ZeroMQ is fast, simple and reliable. We are able to push hundreds of thousands of 500-byte messages per second between Amazon EC2 m1.large instances. The threshold is essentially single connection bandwidth saturation. Even if we were to build all of one’s own socket manipulation logic, we could not send messages much faster. But ZeroMQ IS the socket manipulation logic, so hides the complexities of TCP connection and buffering, thus allowing us to scale better, eliminate single points of failure and most importantly, concentrate on building product instead dealing with things like socket manipulation resilient to brief network failures."*
+
+    [Hootsuite.com](http://code.hootsuite.com/why-we-love-and-use-zeromq-at-hootsuite/)
+    </script>
+</section>
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: false,
+        center: true,
+        mouseWheel: true,
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+    });
+</script>
+
+</body>
 </html>
