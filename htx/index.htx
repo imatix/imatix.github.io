@@ -1,0 +1,6 @@
+<%% header %%>
+<section data-autoslide=1000>
+    <p>Press space, down, or right to navigate</p>
+</section>
+<%% company %%>
+<%% footer %%>

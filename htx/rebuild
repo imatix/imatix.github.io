@@ -1,0 +1,4 @@
+#! /bin/sh
+
+./rebuild.pl index > ../index.html
+./rebuild.pl contact > ../contact.html

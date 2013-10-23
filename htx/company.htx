@@ -1,0 +1,335 @@
+<section data-autoslide=1500>
+    <h2>Distributed systems are in our blood</h2>
+    <hr/>
+    <p class="fragment roll-in" style="text-align:left">1991: we build the middleware for a major European tour operator serving 5,000 travel agents in seven countries</p>
+    <p class="fragment roll-in" style="text-align:left">1996: we invent the fast, portable web server, <a href="http://en.wikipedia.org/wiki/Xitami">Xitami</a></p>
+    <p class="fragment roll-in" style="text-align:left">1998: ServerWatch names Xitami its "Hall of Fame winner"</p>
+    <p class="fragment roll-in" style="text-align:left">2004: we reinvent messaging for JPMorganChase as AMQP</p>
+    <p class="fragment roll-in" style="text-align:left">2006: we move JPMC's trading platform to <a href="http://openamq.org">OpenAMQ</a></p>
+    <p class="fragment roll-in" style="text-align:left">2007: we reinvent messaging, <i>again</i>, as <a href="http://zeromq.org">ZeroMQ</a></p>
+    <p class="fragment roll-in" style="text-align:left">2008: we move the Dow Industrial Average to OpenAMQ</p>
+    <p class="fragment roll-in" style="text-align:left">2013: we reinvent secure messaging with ZeroMQ v4</p>
+</section>
+
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### We are iMatix
+        ----
+
+        We design & build best-in-class distributed systems.
+        Our designs are efficient, scalable, reactive, and they do not break.
+        We've been making long-running distributed systems for the world's largest businesses for over 20 years.
+
+        ----
+        Press right to see we can do for you.
+
+        Press down to see more of what we've done for others.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 2011-2012 - Samsung (Dallas TX, Seoul)
+        ----
+
+        Samsung said, *"make our phones more fun and useful"*
+
+        We used [ZeroMQ](http://zeromq.org) to let phones see each other, and share content and user events. You take a photo, I'll draw on it. This became [Samsung Chord](http://developer.samsung.com/chord).
+
+        We did the technical design, evangelism, made prototypes, and built new development teams on a post-agile process. We built the [Group Play](https://www.google.be/search?q=samsung+group+play) app and migrated Samsung's [Smart School flagship](https://www.google.be/search?q=samsung+smart+school) onto Chord.
+
+        ----
+        We worked in C, Java, C#, on Android, Linux, and Windows, in four time zones.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 2008-2011 DowJones (Trenton NJ)
+        ----
+
+        DownJones said, *"make our indexes run faster and cheaper"*
+
+        We used [OpenAMQ](http://openamq.org) to replace a black-box pub-sub system with a new AMQP-based one. The Dow Jones Industrial Average ran on OpenAMQ until 2013.
+
+        We modifed the wire protocols, and tuned OpenAMQ to run 4x faster, handling 600K messages per second with average latency of 150 usec. We helped the indexes team tune their APIs to achieve *peak* end-to-end latencies of under 1 msec.
+
+        ----
+        We worked in C on Linux and AIX.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 2007 Cisco Systems (San Jose CA)
+        ----
+
+        Cisco said, *"make AMQP work with multicast"*
+
+        We designed a new pub-sub architecture that added [SCTP](http://tools.ietf.org/html/rfc4960) and [PGM](http://tools.ietf.org/html/rfc3208) multicast to AMQP. This became the basis for ZeroMQ, which we launched in December 2007, with Cisco and Intel as launch partners.
+
+        ----
+        We worked in C and C++ on Linux, closely with Cisco software engineers.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 2004-2009 JPMorganChase (London)
+        ----
+
+        JPMC said, *"can you solve our messaging gridlock?"*
+
+        We designed a new open messaging protocol, [AMQP](http://www.amqp.org), and built the first implementation, [OpenAMQ](http://openamq.org), and helped JPMC start an industry workgroup for AMQP.
+
+        We migrated our client's largest stock trading platform to OpenAMQ, running in New York, London, Johannesburg, Moscow.
+
+        ----
+        We worked in C on Linux and learned a lot about the financial industry.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 1998-2008 Manpower International (Milwaukee WI)
+        ----
+
+        MP said, *"our customers demand Web-based ordering, help!"*
+
+        We built from scratch, deployed, operated, and maintained [UltraSource](https://ultrasource.manpower.co.jp/login.asp?op=I), MP's first global web-based HR procurement system. The application was highly customizable by resource managers, and fully multilingual. Users loved it.
+
+        *"UltraSource was the first tool in the staffing industry to provide the scalability, flexibility, and language capability to serve customers worldwide"*, said Jeffrey A. Joerres, Chairman & CEO of Manpower Inc.
+
+        ----
+        We worked in C, C++, VB, ASP, and SQL, on Windows and SQLServer.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 2001-2003 CBR (Belgium)
+        ----
+
+        CBR said, *"help us automate our cement deliveries"*
+
+        With previous experience of helping CBR, we built the order dispatching system for their Ghent factory. This system connects a SAP system in Brussels to the factory's industrial network for unattended 24/7 cement deliveries.
+
+        Our team built the software and hardware, including plug-and-play kiosks of our own design that booted Linux over the network, to connect over a messaging layer to SAP, fetch orders, print tickets, and control the loading bays.
+
+        ----
+        We worked in C, VB, Oracle, C++, on Windows, Unix, and Linux, and in stainless steel.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 2000-2001 Nigerian Breweries (Lagos)
+        ----
+
+        NBL said, *"help us get rid of this cash"*
+
+        With no credit system, and an economy rife with fraud, drinks distributors paid for trucks of beer with suitcases of cash. We built a secure messaging system that let distributors send authenticated wire transfers to their banks. We fed transactions back into NBL's accounting system.
+
+        ----
+        We worked in C, VB, ASP, SQL, and COBOL, on Windows, and Linux.
+        </script>
+    </section>
+
+    <section data-markdown>
+        <script type="text/template">
+        ### 1991-2011 Delight Information Systems (Belgium)
+        ----
+
+        [Delight](http://www.delight.be/) asked, *"Help us build a Europe-wide tour operator network"*.
+
+        How to handle a 1,500 travel agents on a small VAX server? The standard terminal handlers from Digital could only do 30 users per process.
+
+        We wrote our own terminal handler, using a custom multithreading framework driven by asynch I/O events. This let us reach 500 users per process.
+
+        The terminal handlers spoke the VT220 protocol over [LAT](http://en.wikipedia.org/wiki/Local_Area_Transport), [TELNET](http://tools.ietf.org/html/rfc854), and [TN3270](http://tools.ietf.org/html/rfc1576) and plugged into an ACMS transaction processing backend.
+
+        ----
+        We worked in C, on OpenVMS/ACMS.
+        </script>
+    </section>
+</section>
+
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### Technical Risk Management
+        ----
+
+        We take extremely risky or difficult mission-critical projects, often where others have failed. We eliminate the risk through careful design, process, and long experience. And we deliver world-class products that will run for decades.
+
+        ----
+        Press down for more on how we manage technical risks.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Systemic Deconstruction
+        ----
+        No matter how large the problem, we break it down into clean layers that can be solved independently, and at each layer we define a minimal plausible internal architecture. This gives a clean minimal end-to-end skeleton.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Full Testability
+        ----
+        We define formal contracts between these layers, in such a way that each piece can be 100% tested in isolation. We design protocols and APIs, and document these so that development always works towards a known contract.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Post Agile Process
+        ----
+        Our process goes way beyond Agile. We let developers self-organize around discrete problems supplied by expert users. This reduces the need for meetings, for evaluations, and prioritization.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Continuous Delivery
+        ----
+        Instead of weekly or monthly cycles, we aim for incremental growth through real use. We break features and problems into discrete issues, and solve each of these minimally. The results can be shipped at almost any moment.
+        </script>
+    </section>
+</section>
+
+<section data-background="image/imatix.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### Decentralized Security
+        ----
+
+        When you need strong, unbreakable encrytion, you can't trust old backdoored technologies, nor CAs who can be hacked. We added state of the art security into ZeroMQ.
+
+        ----
+        Press down for more on strong decentralized security.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Elliptic Curve Cryptography
+        ----
+        From ZeroMQ v4, we use independently developed [Curve25519](http://cr.yp.to/ecdh.html), very fast and secure. Two ZeroMQ peers use [a secure handshake](http://curvezmq.org) to exchange transient keys, giving perfect forward security.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Authentication
+        ----
+        Peers exchange keys beforehand using secure certificates. Our [CZMQ library](http://czmq.zeromq.org) does client authentication automatically, or we can connect the authenticator to an LDAP server or other authority.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Transport Layer Security
+        ----
+        Since ZeroMQ v4 does security in the transport layer, it works for all socket types, including REQ-REP, PUB-SUB, PUSH-PULL, and ROUTER-DEALER. Further, you can mix applications in any language, using the same security technology.
+        </script>
+    </section>
+</section>
+
+<section data-background="image/zeromq.png">
+    <section data-markdown>
+        <script type="text/template">
+        ### Open Source Intelligence
+        ----
+
+        When free or open source software is part of your strategy, you need a partner with experience. We've been making open source [since 1991](http://legacy.imatix.com/html/libero/).
+
+        ----
+        Press down for more on our open source experience.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Community Building
+        ----
+        As the founders of the ZeroMQ community, we know how to help people organize around open source. We're the main contributors to [libzmq](http://github.com/zeromq/libzmq) and [CZMQ](http://czmq.zeromq.org), two of the core projects. There are hundreds of open source projects in and the ZeroMQ community.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Contribution Processes
+        ----
+        The saying goes, you don't want ninjas, you want ants. Ninjas are never there. Ants carry a hundred times their own weight and are great at working in teams. We're experts in helping the ants be happy and productive.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Copyrights, Patents, Trademarks
+        ----
+        You have to get these right from the start in your FOSS project. We're experts in how these affect open source. iMatix CEO Pieter Hintjens [was a prominent campaigner](http://www.iam-magazine.com/blog/detail.aspx?g=db757d27-e86c-49b6-9c4c-1ca7ecb47cae&q=hintjens#search=%22hintjens%22) for open standards and software patent reform in Europe.
+        </script>
+    </section>
+</section>
+
+<section data-background="image/imatix.png">
+    <%% address Press down for more on iMatix %%>
+    <section data-markdown>
+        <script type="text/template">
+        ### Services and Rates
+        ----
+        We provide on-site training and workshops, technical architecture, product conceptualization, risk management, patent and copyright strategies, community-building, technical coding in any language but mostly in C, and long term support.
+
+        Our rates depend on the location and duration of work.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### Software Licenses
+        ----
+        Our open source libraries including ZeroMQ and CZMQ are 100% compatible with your applications, no matter what your license model, no matter if you use static or dynamic builds.
+
+        We do not re-license these libraries under commercial terms. We do offer full support at excellent rates.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+        ### For More Information
+        ----
+        You can read more about iMatix's unique approach to world-class software engineering in the O'Reilly book, ["ZeroMQ - Messaging for Many Applications"](http://shop.oreilly.com/product/0636920026136.do).
+
+        ![](image/book.png)
+        </script>
+    </section>
+</section>
+
+<section data-markdown data-background="image/imatix.png">
+    <script type="text/template">
+    *"Where Xitami truly shines is its small memory footprint and raw speed. Xitami's multithreaded engine delivers faster performance with fewer resources than comparative Apache installations. Apache, as of version 2.0, is multithreaded, but it's still a larger, slower beast compared to nimble Xitami. Thus, at its heart, Xitami is a basic, very fast and efficient Web server."*
+
+    [ServerWatch, 2004](http://www.serverwatch.com/sreviews/article.php/3116281)
+    </script>
+</section>
+
+<section data-markdown data-background="image/zeromq.png">
+    <script type="text/template">
+    *"Working with 0MQ has been a huge pleasure, bringing massive improvements in stability, understandability, and code quality. I also highly recommend anyone working on concurrent applications of any sort, whether or not you plan to use 0MQ, read the 0MQ Guide to learn how to mitigate most of the current headaches in multithreaded applications. I know for a fact that multithreading code is a path I will never voluntarily tread again."*
+
+    [Professional ASP.NET e-commerce developer](http://www.nothingisalotofsomething.com/post/2012/06/02/Experiences-With-ZeroMQ.aspx)
+    </script>
+</section>
+
+<section data-markdown data-background="image/zeromq.png">
+    <script type="text/template">
+    *"That test also unveiled the brilliant, automatic message batching implemented in ZeroMQ."*
+
+    [CERN, Geneva](http://www.zeromq.org/local--files/intro:read-the-manual/Middleware%20Trends%20and%20Market%20Leaders%202011.pdf)
+
+    ![](image/cern2.png)
+    </script>
+</section>
+
+<section data-markdown data-background="image/zeromq.png">
+    <script type="text/template">
+    *"We’re pleased because ZeroMQ is fast, simple and reliable. We are able to push hundreds of thousands of 500-byte messages per second between Amazon EC2 m1.large instances. The threshold is essentially single connection bandwidth saturation. Even if we were to build all of one’s own socket manipulation logic, we could not send messages much faster. But ZeroMQ IS the socket manipulation logic, so hides the complexities of TCP connection and buffering, thus allowing us to scale better, eliminate single points of failure and most importantly, concentrate on building product instead dealing with things like socket manipulation resilient to brief network failures."*
+
+    [Hootsuite.com](http://code.hootsuite.com/why-we-love-and-use-zeromq-at-hootsuite/)
+    </script>
+</section>
+
+<%% address Press left to go back %%>
