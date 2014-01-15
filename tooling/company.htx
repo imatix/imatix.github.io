@@ -49,7 +49,7 @@
         ### 2008-2011 DowJones (Trenton NJ)
         ----
 
-        DownJones said, *"make our indexes run faster and cheaper"*
+        DowJones said, *"make our indexes run faster and cheaper"*
 
         We used [OpenAMQ](http://openamq.org) to replace a black-box pub-sub system with a new AMQP-based one. The Dow Jones Industrial Average ran on OpenAMQ until 2013.
 
