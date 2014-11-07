@@ -1,5 +1,8 @@
 <%% header %%>
-<section data-autoslide=1000>
+<section data-autoslide=5000>
+    <p>This is iMatix.com</p>
+    <p>The "most irritating website I've ever dealt with" -- John D.</p>
+    <p>Email sales@imatix.com to talk to a real person</p>
     <p>Press space, down, or right to navigate</p>
 </section>
 <%% company %%>
