@@ -1,8 +1,8 @@
 <%% header %%>
 <section data-autoslide=5000>
     <h2>iMatix Builds Distributed Software</h2>
-    <p>Established in 1996, iMatix is behind many successful distributed software systems. We invented AMQP and [ZeroMQ](http://zeromq.org), [Zyre](http://zyre.com), [ZMTP](http://zmtp.org), and many other world-changing technologies. We are the experts in distributed software.</p>
-    <p>Email sales@imatix.com to talk to a real person</p>
+    <p>Established in 1996, iMatix is behind many successful distributed software systems. We invented AMQP, ZeroMQ, Zyre, ZMTP, and many other world-changing technologies. We are the experts in distributed software.</p>
+    <p>Email sales@imatix.com to speak with a real person</p>
     <p>Press space, down, or right to navigate</p>
 </section>
 <%% company %%>
